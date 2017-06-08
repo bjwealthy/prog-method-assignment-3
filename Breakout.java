@@ -65,13 +65,28 @@ public class Breakout extends GraphicsProgram {
 
 
 
-privat void createBricks(int n, double cx, double cy){
-	for(int r = 0; r < 10; r++){
-		for(int y = 0; y < 10; y++){
+private void createBricks(int n, double cx, double cy){
+	for(int row = 0; row < 10; row++){
+		for(int col = 0; col < 10; col++){
 			//to get the x- and y-coordinates of the starting brick
 			//i.e the one at the centre
-			double x = cx - (NBRICKS_PER_ROW*BRICK_WIDTH)/2 - (NBRICKS_PER_ROW - 1)*BRICK_SEP)/2  + c*BRICK_WIDTH + c*BRICK_SEP)/2 + BRICK_WIDTH + column*BRICK_SEP;
-			double y = cy + r*BRICK_HEIGHT + r*BRICK_SEP;
+			double x = cx - (NBRICKS_PER_ROW*BRICK_WIDTH)/2 - (NBRICKS_PER_ROW - 1)*BRICK_SEP)/2  + col*BRICK_WIDTH + col*BRICK_SEP)/2 + BRICK_WIDTH + col*BRICK_SEP;
+			double y = cy + row*BRICK_HEIGHT + row*BRICK_SEP;
+			
+		GRect bri = new GRect(x, y, BRICK_WIDTH< BRICK_HEIGHT);
+		add(bri);
+		
+		//painting bricks
+		for(row = 0; row < 2; row++ )
+			bri.setColor(Color.RED);
+		for(row = 2; row < 4; row++)
+			bri.setColor(Color.ORANGE);
+		for (row = 4; row < 6; row++)
+			bri.setColor(Color.YELLOW);
+		for(row = 6; row < 7; row++)
+			bri.setC
+		
+		
 			
 			
 		}
