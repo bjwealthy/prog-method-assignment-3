@@ -65,13 +65,13 @@ public class Breakout extends GraphicsProgram {
 
 
 
-public void createBricks(int n, double cx, double cy){
+privat void createBricks(int n, double cx, double cy){
 	for(int r = 0; r < 10; r++){
 		for(int y = 0; y < 10; y++){
 			//to get the x- and y-coordinates of the starting brick
 			//i.e the one at the centre
-			double x = cx - (NBRICKS_PER_ROW*BRICK_WIDTH)/2 - (NBRICKS_PER_ROW - 1)*BRICK_SEP)/2  + column*BRICK_WIDTH + column*BRICK_SEP
-			
+			double x = cx - (NBRICKS_PER_ROW*BRICK_WIDTH)/2 - (NBRICKS_PER_ROW - 1)*BRICK_SEP)/2  + c*BRICK_WIDTH + c*BRICK_SEP)/2 + BRICK_WIDTH + column*BRICK_SEP;
+			double y = cy + r*BRICK_HEIGHT + r*BRICK_SEP;
 			
 			
 		}
