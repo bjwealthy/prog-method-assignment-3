@@ -100,7 +100,6 @@ public class Breakout extends GraphicsProgram {
                 add (brick);
                 brick.setFilled(true);
                 
-                //Setting colors depending on which row the bricks are in
                 
                 if (row < 2) {
                     brick.setColor(Color.RED);
